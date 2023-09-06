@@ -2,7 +2,7 @@ export const Home = () => {
   return (
     <section className="section-home">
       <div className="home-aboutme">
-        <h1>Lautaro Gomez, 👋🏻</h1>
+        <h1>Lautaro Gomez</h1>
         <h3>Fron-End Developer</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
