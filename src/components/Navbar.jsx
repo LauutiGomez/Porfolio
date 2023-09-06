@@ -1,8 +1,7 @@
-import React from 'react'
 
 export const Navbar = () => {
   return (
-    <header>
+    <nav>
       <a href="">LGmZ</a>
       <ul>
         <li><a href="">Inicio</a></li>
@@ -10,6 +9,6 @@ export const Navbar = () => {
         <li><a href="">Habilidades</a></li>
         <li><a href="">Proyectos</a></li>
         </ul>
-    </header>
+    </nav>
   )
 }
