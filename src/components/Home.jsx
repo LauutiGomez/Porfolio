@@ -3,7 +3,7 @@ export const Home = () => {
     <section className="section-home">
       <div className="home-aboutme">
         <h1>Lautaro Gomez</h1>
-        <h3>Fron-End Developer</h3>
+        <h3>Front-End Developer</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
           nesciunt veniam, nisi facilis similique ducimus error, quam

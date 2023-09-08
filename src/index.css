@@ -5,7 +5,11 @@
   color: #dce3f8;
   font-family: Calibre, Inter, San Francisco, SF Pro Text, -apple-system,
     system-ui, sans-serif;
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .main {
@@ -57,10 +61,29 @@ h3 {
 }
 
 .home-aboutme > h3 {
+  width: max-content;
+  border-right: 3px solid #dce3f8;
+  font-size: 1rem;
+  animation: teclear 1s steps(16), efecto 1s step-end infinite alternate;
   background: linear-gradient(90deg, #ad6edd, #00d4ff);
   -webkit-background-clip: text;
   color: transparent;
   font-size: 50px;
+}
+
+@keyframes teclear {
+  from {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes efecto {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .home-aboutme > p,
@@ -152,23 +175,27 @@ button {
 }
 
 .logos:before,
-.logos:after{
+.logos:after {
   position: absolute;
   top: 0;
   width: 300px;
   height: 100%;
-  content: '';
+  content: "";
   z-index: 2;
 }
 
-.logos::before{
+.logos::before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0),rgb(34, 34, 34) );
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(34, 34, 34));
 }
 
-.logos::after{
+.logos::after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0),rgb(34, 34, 34) );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgb(34, 34, 34)
+  );
 }
 
 .logos-slide {
@@ -180,5 +207,3 @@ button {
   height: 100px;
   margin: 0 20px;
 }
-
-
