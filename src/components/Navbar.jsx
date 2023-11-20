@@ -13,7 +13,7 @@ export const Navbar = () => {
           <a href="#skills">Habilidades</a>
         </li>
         <li>
-          <a href="">Proyectos</a>
+          <a href="#proyects">Proyectos</a>
         </li>
       </ul>
     </nav>
