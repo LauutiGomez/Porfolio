@@ -1,21 +1,22 @@
 export const Navbar = () => {
   return (
-    <nav>
-      <a href="">LGmZ</a>
+    <header>
+    <nav className="navBar" >
       <ul>
         <li>
-          <a href="">Inicio</a>
+          <a href="#root">Inicio</a>
         </li>
         <li>
-          <a href="">Sobre Mi</a>
+          <a href="#projects">Proyectos</a>
         </li>
         <li>
           <a href="#skills">Habilidades</a>
         </li>
         <li>
-          <a href="">Proyectos</a>
+          <a href="">Sobre Mi</a>
         </li>
       </ul>
     </nav>
+    </header>
   );
 };
