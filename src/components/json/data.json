@@ -2,25 +2,19 @@
     "dataProyects" : [
         {   "id": "0",
             "title": "Gamers Components",
-            "img": "./src/assets/gamers-components.png",
-            "description": "Proyecto simulando un E-commerce de componentes de computadora para un curso que realice",
+            "img": "./src/assets/gamers-components.webp",
+            "description": "Proyecto simulando una tienda E-commerce de componentes de computadora",
             "deploy":"https://lauutigomez.github.io/GamersComponents-proyecto/",
-            "repo": "https://github.com/LauutiGomez/GamersComponents-proyecto.git"
+            "repo": "https://github.com/LauutiGomez/GamersComponents-proyecto.git",
+            "tags":""
         },
         { "id": "1",
             "title": "ToDo List",
-            "img": "./src/assets/ToDo-List.png",
-            "description": "lorem impsun",
+            "img": "./src/assets/ToDo-List.webp",
+            "description": "Aplicacion para organizar una lista de tareas a realizar",
             "deploy":"",
-            "repo": ""
-        },
-        { "id": "2",
-            "title": "Miltons Burgers",
-            "img": "./src/assets/proyecto-burger.jpg",
-            "description": "lorem impsun",
-            "deploy":"",
-            "repo": ""
+            "repo": "",
+            "tags":""
         }
     ]
-    
 }
