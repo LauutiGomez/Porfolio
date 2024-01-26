@@ -1,0 +1,47 @@
+{"dataProyects" : [
+  {
+    "id": "0",
+    "title": "Gamers Components",
+    "img": "./src/assets/gamers-components.webp",
+    "description":
+      "Proyecto simulando una tienda E-commerce de componentes de computadora",
+    "deploy": "https://lauutigomez.github.io/GamersComponents-proyecto/",
+    "repo": "https://github.com/LauutiGomez/GamersComponents-proyecto.git",
+    "tags": [
+      {
+        "id":"0",
+        "label":"HTML",
+        "imageUrl":"./src/assets/html5.svg"
+      },
+      {
+        "id":"1",
+        "label":"CSS",
+        "imageUrl":"./src/assets/css.svg"
+      },
+      {
+        "id":"2",
+        "label":"JavaScript",
+        "imageUrl":"./src/assets/javascript.svg"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "title": "ToDo List",
+    "img": "./src/assets/ToDo-List.webp",
+    "description": "Aplicacion para organizar una lista de tareas a realizar",
+    "deploy": "",
+    "repo": "",
+    "tags": 
+    [{
+      "id":"0",
+      "label":"React",
+      "imageUrl":"./src/assets/react.svg"
+    },
+    {
+      "id":"1",
+      "label":"Tailwind CSS",
+      "imageUrl":"./src/assets/tailwindcss.svg"
+    }]
+  }
+]}

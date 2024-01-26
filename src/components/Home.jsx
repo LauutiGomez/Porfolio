@@ -35,6 +35,7 @@ export const Home = () => {
             className="button-Linkedin"
             target="_blank"
           >
+            <span className="button-content-cv">
             <svg
               width="256"
               height="256"
@@ -49,12 +50,14 @@ export const Home = () => {
               />
             </svg>
             Linkedin
+            </span>
           </a>
           <a
             href="https://github.com/LauutiGomez"
             className="button-GitHub"
             target="_blank"
           >
+            <span className="button-content-cv">
             <svg
               viewBox="0 0 256 250"
               width="256"
@@ -70,6 +73,7 @@ export const Home = () => {
               />
             </svg>
             GitHub
+            </span>
           </a>
         </nav>
       </div>

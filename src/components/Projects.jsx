@@ -1,6 +1,5 @@
 import React from "react";
-import { dataProyects } from "./json/data.json";
-
+import { dataProyects } from "./data/data.json";
 export const Projects = () => {
   return (
     <section className="section-cards-proyects" id="projects">
@@ -23,11 +22,21 @@ export const Projects = () => {
       </h2>
       <ul>
         {dataProyects.map((proyect) => {
-          const { img, title, description, deploy, repo, tags } = proyect;
+          const { img, title, description, deploy, repo, tags, id } = proyect;
           return (
-            <li className="container-proyect">
+            <li className="container-proyect" key={id}>
               <h2>{title}</h2>
               <p>{description}</p>
+              <ul className="container-project-tags">
+                {tags.map((tag) => {
+                  const {id, label, imageUrl} = tag
+                  return (
+                  <li key={id}>
+                  <img src={imageUrl} alt="" className="icon-tags-proyect"/>
+                  <span>{label}</span>
+                  </li>)
+                })}
+              </ul>
               <img src={img} alt="" />
               <div className="container-proyects-buttoms">
                 <a href={deploy} className="button-web" target="_blank">

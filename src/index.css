@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+.favicon{
+  color: white;
+}
+
 body {
   background-color: #12131d;
 }
@@ -46,6 +50,7 @@ header {
 
 .navBar > ul {
   display: flex;
+  padding: 20px 40px;
   list-style: none;
   flex-direction: row;
 }
@@ -53,14 +58,17 @@ header {
 .navBar > ul > li > a {
   text-decoration: none;
   display: flex;
-  margin: 20px;
+  padding: 0px 10px;
   position: relative;
   font-size: 15px;
   transition: 0.3s ease;
 }
 
 .navBar > ul > li > a:hover {
-  color: #00d4ff;
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
 }
 
 /* GENERAL TITLES */
@@ -106,7 +114,7 @@ h3 {
   border-right: 3px solid #dce3f8;
   animation: teclear 1s steps(16), efecto 1s step-end infinite alternate;
   background: linear-gradient(90deg, #ad6edd, #00d4ff);
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   font-size: 50px;
 }
@@ -161,28 +169,6 @@ button {
   justify-content: start;
 }
 
-.button-cv {
-  border: 1px solid #ffffff1a;
-  position: relative;
-  overflow: hidden;
-  height: 40px;
-  padding: 0 2rem;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-  background-size: 400%;
-  color: #fff;
-  transition: all 0.3s ease;
-  font-size: 15px;
-}
-
-.button-cv:hover {
-  transform: scale(1.1);
-}
-
-.button-cv:hover::before {
-  transform: scaleX(1);
-}
-
 .button-content-cv {
   display: flex;
   gap: 0.5rem;
@@ -192,22 +178,8 @@ button {
   background-color: transparent;
 }
 
-.button-cv::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  width: 100%;
-  height: inherit;
-  border-radius: inherit;
-  background: linear-gradient(90deg, #ad6edd, #00d4ff);
-  transition: all 0.4s;
-}
-
 .button-Linkedin,
-.button-GitHub {
+.button-GitHub, .button-cv {
   display: flex;
   text-decoration: none;
   height: 40px;
@@ -224,11 +196,7 @@ button {
   font-size: 15px;
 }
 
-.button-Linkedin:hover {
-  transform: scale(1.1);
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.button-GitHub:hover {
+.button-Linkedin:hover, .button-GitHub:hover, .button-cv:hover {
   transform: scale(1.1);
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -264,12 +232,27 @@ button {
   padding: 15px 20px;
 }
 
+.container-proyect:hover{
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.74);
+  transition: all .7s ease;
+}
+
+.container-project-tags > li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
 .icon-projects {
   stroke-width: 2;
   stroke-linecap: round;
   width: 2rem;
   height: 2rem;
-  background-color: rgb(255 255 255 / 0%);
+}
+
+.icon-tags-proyect {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .container-proyect > img {
