@@ -1,9 +1,9 @@
-import { Navbar } from "./components/Navbar";
-import { Home } from "./components/Home";
-import { About } from "./components/About";
-import { Skills } from "./components/Skills";
-import { Projects } from "./components/Projects";
-import { Footer } from "./components/Footer";
+import { Navbar } from "./components/navbar/Navbar";
+import { Home } from "./components/home/Home";
+import { About } from "./components/about/About";
+import { Skills } from "./components/skills/Skills";
+import { Projects } from "./components/projects/Projects";
+import { Footer } from "./components/footer/Footer";
 
 function App() {
   return (

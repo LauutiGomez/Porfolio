@@ -5,7 +5,7 @@ export const Home = () => {
         <h1>Lautaro Gomez</h1>
         <h3>Front-End Developer</h3>
         <p>
-          Disfruto desarrollar sitios web avanzados de alto rendimiento y
+          Desarrollando sitios web avanzados de alto rendimiento y
           mejorando la experiencia de usuario.
         </p>
         <nav className="container-buttoms-home">
@@ -79,7 +79,7 @@ export const Home = () => {
       </div>
       <div className="home-img">
         <img
-          src="./src/assets/lautaro-gomez.png"
+          src="./src/assets/img/lautaro-gomez.png"
           alt="imagen de Lautaro Gomez"
         />
       </div>

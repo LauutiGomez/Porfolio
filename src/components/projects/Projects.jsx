@@ -1,5 +1,5 @@
 import React from "react";
-import { dataProyects } from "./data/data.json";
+import { dataProyects } from "../../data/data.json";
 export const Projects = () => {
   return (
     <section className="section-cards-proyects" id="projects">
@@ -21,23 +21,23 @@ export const Projects = () => {
         Proyectos
       </h2>
       <ul>
-        {dataProyects.map((proyect) => {
+        {dataProyects.map((proyect, i) => {
           const { img, title, description, deploy, repo, tags, id } = proyect;
           return (
             <li className="container-proyect" key={id}>
               <h2>{title}</h2>
               <p>{description}</p>
               <ul className="container-project-tags">
-                {tags.map((tag) => {
-                  const {id, label, imageUrl} = tag
+                {tags.map((tag, i) => {
+                  const {id, label, imageUrl, classTechnology} = tag
                   return (
-                  <li key={id}>
-                  <img src={imageUrl} alt="" className="icon-tags-proyect"/>
+                  <li key={id} className={`container-tag-${classTechnology}`}>
+                  <img src={imageUrl} alt="icono de las tecnologias utilizadas en cada proyecto" className="icon-tags-proyect"/>
                   <span>{label}</span>
                   </li>)
                 })}
               </ul>
-              <img src={img} alt="" />
+              <img src={img} alt="imagen del proyecto realizado" />
               <div className="container-proyects-buttoms">
                 <a href={deploy} className="button-web" target="_blank">
                   <svg

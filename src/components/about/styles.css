@@ -1,0 +1,13 @@
+.article-aboutme{
+    max-width: 35rem;
+    p{
+      padding: 0px 40px;
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 1rem;
+    }
+    
+    img{
+      width: auto;
+    }
+  }

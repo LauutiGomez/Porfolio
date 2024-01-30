@@ -2,7 +2,7 @@
   {
     "id": "0",
     "title": "Gamers Components",
-    "img": "./src/assets/gamers-components.webp",
+    "img": "./src/assets/img/gamers-components.webp",
     "description":
       "Proyecto simulando una tienda E-commerce de componentes de computadora",
     "deploy": "https://lauutigomez.github.io/GamersComponents-proyecto/",
@@ -11,24 +11,27 @@
       {
         "id":"0",
         "label":"HTML",
-        "imageUrl":"./src/assets/html5.svg"
+        "imageUrl":"./src/assets/img/html5.svg",
+        "classTechnology":"html"
       },
       {
         "id":"1",
         "label":"CSS",
-        "imageUrl":"./src/assets/css.svg"
+        "imageUrl":"./src/assets/img/css.svg",
+        "classTechnology":"css"
       },
       {
         "id":"2",
         "label":"JavaScript",
-        "imageUrl":"./src/assets/javascript.svg"
+        "imageUrl":"./src/assets/img/javascript.svg",
+        "classTechnology":"JavaScript"
       }
     ]
   },
   {
     "id": "1",
     "title": "ToDo List",
-    "img": "./src/assets/ToDo-List.webp",
+    "img": "./src/assets/img/ToDo-List.webp",
     "description": "Aplicacion para organizar una lista de tareas a realizar",
     "deploy": "",
     "repo": "",
@@ -36,12 +39,16 @@
     [{
       "id":"0",
       "label":"React",
-      "imageUrl":"./src/assets/react.svg"
+      "imageUrl":"./src/assets/img/react.svg",
+      "classTechnology":"React"
     },
     {
       "id":"1",
       "label":"Tailwind CSS",
-      "imageUrl":"./src/assets/tailwindcss.svg"
+      "imageUrl":"./src/assets/img/tailwindcss.svg",
+      "classTechnology":"Tailwind"
     }]
   }
-]}
+]
+}
+
