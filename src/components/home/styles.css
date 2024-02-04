@@ -121,3 +121,72 @@
     height: 2rem;
     background-color: rgb(255 255 255 / 0%);
   }
+
+  @media (max-width: 990px){
+    .section-home{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      max-width: 600px;
+      padding-top: 50px;
+    }
+    .home-img{
+      display: flex;
+      justify-content: start;
+      img{
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    .home-aboutme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+      font-size: 56px;
+    }
+
+    p{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 10px;
+    }
+  }
+  }
+
+  @media (max-width: 390px){
+    .section-home {
+      padding-top: 50px;
+      width: 300px;
+
+      .home-aboutme{
+        width: 300px;
+
+      h1{
+        width: auto;
+      }
+
+      h3{
+        width: auto;
+      }
+
+      }
+
+      .container-buttoms-home{
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        button,a{
+          width: 260px;
+        }
+      }
+    }
+  }

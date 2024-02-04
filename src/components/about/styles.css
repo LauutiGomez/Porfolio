@@ -1,5 +1,12 @@
 .article-aboutme{
-    max-width: 35rem;
+      display: flex;
+      align-items: center;
+      padding-bottom: 50px;
+
+    .container-parrafos-aboutme{
+      margin-top: 50px;
+    }
+
     p{
       padding: 0px 40px;
       font-size: 18px;
@@ -8,6 +15,42 @@
     }
     
     img{
-      width: auto;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 50px black;
+    border: 1px solid #000000de;
+    }
+  }
+
+  @media (max-width: 990px){
+    .article-aboutme {
+      padding-right: 20px;
+
+      img{
+        margin-top: 50px;
+      }
+    }
+  }
+
+  @media (max-width: 390px){
+    .article-aboutme{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .container-parrafos-aboutme{
+        display: flex;
+        flex-direction: column;
+      }
+      img{
+        width: 250px;
+        height: 250px;
+      }
+
     }
   }

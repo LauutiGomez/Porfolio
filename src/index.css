@@ -14,9 +14,10 @@
 }
 
 body {
-  background-image: radial-gradient(ellipse 80% 80% at 50% -20%,#7877c64d,#fff0);
+  background-image: radial-gradient(ellipse 80% 80% at 50% -20%,#6060614d,#12131D);
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 7 18 / var(--tw-bg-opacity));
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -48,4 +49,22 @@ html {
   stroke-linecap: round;
   width: 2rem;
   height: 2rem;
+}
+
+@media (max-width: 990px){
+  .main {
+    max-width: 690px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 390px){
+  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px ;
+    
+  }
 }

@@ -9,19 +9,19 @@
     "repo": "https://github.com/LauutiGomez/GamersComponents-proyecto.git",
     "tags": [
       {
-        "id":"0",
+        "id":"1",
         "label":"HTML",
         "imageUrl":"./src/assets/img/html5.svg",
         "classTechnology":"html"
       },
       {
-        "id":"1",
+        "id":"2",
         "label":"CSS",
         "imageUrl":"./src/assets/img/css.svg",
         "classTechnology":"css"
       },
       {
-        "id":"2",
+        "id":"3",
         "label":"JavaScript",
         "imageUrl":"./src/assets/img/javascript.svg",
         "classTechnology":"JavaScript"
@@ -29,7 +29,7 @@
     ]
   },
   {
-    "id": "1",
+    "id": "4",
     "title": "ToDo List",
     "img": "./src/assets/img/ToDo-List.webp",
     "description": "Aplicacion para organizar una lista de tareas a realizar",
@@ -37,13 +37,13 @@
     "repo": "",
     "tags": 
     [{
-      "id":"0",
+      "id":"5",
       "label":"React",
       "imageUrl":"./src/assets/img/react.svg",
       "classTechnology":"React"
     },
     {
-      "id":"1",
+      "id":"6",
       "label":"Tailwind CSS",
       "imageUrl":"./src/assets/img/tailwindcss.svg",
       "classTechnology":"Tailwind"

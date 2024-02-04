@@ -20,18 +20,18 @@ export const About = () => {
         Sobre mi
       </h2>
       <article className="article-aboutme">
-        <div>
+        <div className="container-parrafos-aboutme">
           <p>
             ¡Hola 👋🏻! Mi nombre es Lautaro, tengo 28 años y soy de la vibrante
             ciudad de Buenos Aires, Argentina.
           </p>
           <p>
             Cuando no estoy inmerso en el mundo del Desarrollo Web, disfruto
-            jugando futbol con amigos o gameplays como asi tambien un buen mate
+            jugando futbol con amigos o gameplays, como asi tambien un buen mate
             🧉 y una buena charla.
           </p>
         </div>
-        <img src="./src/assets/img/prueba.webp" alt="" />
+        <img src="./src/assets/img/sobre-mi.gif" alt="imagen gif de un programador" />
       </article>
     </section>
   );

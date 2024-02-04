@@ -1,4 +1,4 @@
-import { skills } from "../../data/Tecnologias";
+import { skills } from "../../data/tecnologias.json";
 
 export const Skills = () => {
   return (
