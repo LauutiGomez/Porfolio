@@ -4,5 +4,6 @@ Mi Porfolio Front-End
 
 
 Creado con:
-[![My Skills](https://skillicons.dev/icons?i=react,vitejs)](https://skillicons.dev)
+<br>
+[![My Skills](https://skillicons.dev/icons?i=react,vite)](https://skillicons.dev)
 
