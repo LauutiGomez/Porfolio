@@ -1,6 +1,31 @@
+import React, { useState, useRef, useEffect } from "react";
+import { useIntersectionObserver } from "../../hook/useIntersectionObserver";
+
 export const Home = () => {
+
+  const sectionHome = useRef(null);
+  const [homeNavbar, sethomeNavbar] = useState(null);
+
+  
+  const handleIntersectionHome = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        homeNavbar.classList.add("active");
+      } else {
+        homeNavbar.classList.remove("active");
+      }
+    });
+  };
+
+  useIntersectionObserver([sectionHome], handleIntersectionHome);
+  
+  useEffect(() => {
+    const element = document.getElementById("navBar-Home");
+    sethomeNavbar(element);
+  }, [""]);
+  
   return (
-    <section className="section-home">
+    <section className="section-home" id="home" ref={sectionHome}>
       <div className="home-aboutme">
         <h1>Lautaro Gomez</h1>
         <h3>Front-End Developer</h3>

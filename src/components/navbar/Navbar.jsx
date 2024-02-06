@@ -1,23 +1,18 @@
-import { useRef,useState, useEffect } from "react";
-
 export const Navbar = () => {
-
-
-
   return (
     <header>
       <nav className="navBar">
         <ul>
-          <li>
-            <a href="#root">Inicio</a>
+          <li id="navBar-Home">
+            <a href="#home">Inicio</a>
           </li>
-          <li>
+          <li id="navBar-Proyectos">
             <a href="#projects">Proyectos</a>
           </li>
-          <li>
+          <li id="navBar-Habilidades">
             <a href="#skills">Habilidades</a>
           </li>
-          <li>
+          <li id="navBar-SobreMi">
             <a href="#about">Sobre Mi</a>
           </li>
         </ul>

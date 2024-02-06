@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { useIntersectionObserver } from "../../hook/useIntersectionObserver";
 import { dataProyects } from "../../data/data.json";
 export const Projects = () => {
+
+  const sectionProjects = useRef(null);
+  const [projectsNavbar, setprojectsNavbar] = useState(null);
+
+  
+  const handleIntersectionProjects = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        projectsNavbar.classList.add("active");
+      } else {
+        projectsNavbar.classList.remove("active");
+      }
+    });
+  };
+
+  useIntersectionObserver([sectionProjects], handleIntersectionProjects);
+  
+  useEffect(() => {
+    const element = document.getElementById("navBar-Proyectos");
+    setprojectsNavbar(element);
+  }, [""]);
+
+
   return (
-    <section className="section-cards-proyects" id="projects">
+    <section className="section-cards-proyects" id="projects" ref={sectionProjects}>
       <h2 className="title-proyects">
         <svg
           xmlns="http://www.w3.org/2000/svg"

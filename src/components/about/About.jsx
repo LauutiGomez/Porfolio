@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { useIntersectionObserver } from "../../hook/useIntersectionObserver";
 
 export const About = () => {
+
+  const sectionAbout= useRef(null);
+  const [aboutNavbar, setaboutNavbar] = useState(null);
+
+  
+  const handleIntersectionAbout = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        aboutNavbar.classList.add("active");
+      } else {
+        aboutNavbar.classList.remove("active");
+      }
+    });
+  };
+
+  useIntersectionObserver([sectionAbout], handleIntersectionAbout);
+  
+  useEffect(() => {
+    const element = document.getElementById("navBar-SobreMi");
+    setaboutNavbar(element);
+  }, [""]);
+
   return (
-    <section>
+    <section ref={sectionAbout}>
       <h2 className="title-skills" id="about">
         <svg
           xmlns="http://www.w3.org/2000/svg"

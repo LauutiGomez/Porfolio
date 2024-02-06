@@ -68,3 +68,12 @@ html {
     
   }
 }
+
+.active{
+  a{
+    transform: scale(1.1);
+    border: 1px solid rgba(255, 255, 255, 0.685) ;
+    border-color: rgba(255, 255, 255, 0.685);
+    border-radius: 9999px;
+  }
+}
