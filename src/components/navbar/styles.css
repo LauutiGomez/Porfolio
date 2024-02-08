@@ -53,7 +53,7 @@ text-yellow-500 {
   color: purple;
 }
 
-@media (max-width: 990px) {
+/* @media screen and (max-width: 1024px) {
   header {
     display: flex;
     flex-direction: column-reverse;
@@ -75,5 +75,22 @@ text-yellow-500 {
 
 @media (max-width: 390px){
 
-  }
+  } */
 
+@media screen and (max-width: 1080px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 38rem;
+
+    .navBar{
+      width: inherit;
+    ul{
+      width: inherit;
+      justify-content: center;
+      align-items: center;
+    }
+    }
+  }
+}

@@ -44,15 +44,15 @@ export const Projects = () => {
         </svg>
         Proyectos
       </h2>
-      <ul>
-        {dataProyects.map((proyect, i) => {
+      <ul className="container-proyects">
+        {dataProyects.map((proyect) => {
           const { img, title, description, deploy, repo, tags, id } = proyect;
           return (
             <li className="container-proyect" key={id}>
               <h2>{title}</h2>
               <p>{description}</p>
               <ul className="container-project-tags">
-                {tags.map((tag, i) => {
+                {tags.map((tag) => {
                   const {id, label, imageUrl, classTechnology} = tag
                   return (
                   <li key={id} className={`container-tag-${classTechnology}`}>

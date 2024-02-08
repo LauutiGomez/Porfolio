@@ -23,7 +23,7 @@ html {
 }
 
 .main {
-  max-width: 1024px;
+  max-width: 64rem;
   margin: auto;
 }
 
@@ -31,7 +31,8 @@ html {
 /* GENERAL TITLES STYLE */
 
 .title-skills,
-.title-proyects {
+.title-proyects,
+.title-about-me {
   font-weight: bold;
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -51,14 +52,14 @@ html {
   height: 2rem;
 }
 
-@media (max-width: 990px){
+/* @media screen and (max-width: 1080px){
   .main {
-    max-width: 690px;
+    max-width: 64rem;
     margin: auto;
   }
 }
 
-@media (max-width: 390px){
+@media screen and (max-width: 480px){
   .main{
     display: flex;
     flex-direction: column;
@@ -67,7 +68,7 @@ html {
     padding: 0px ;
     
   }
-}
+} */
 
 .active{
   a{

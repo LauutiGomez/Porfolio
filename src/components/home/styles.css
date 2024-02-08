@@ -8,7 +8,7 @@
   }
   
   .home-aboutme {
-    max-width: 780px;
+    width: 45rem;
   }
   
   .home-aboutme > h1,
@@ -28,6 +28,7 @@
     background-clip: text;
     color: transparent;
     font-size: 50px;
+    padding-bottom: 1rem;
   }
   
   @keyframes teclear {
@@ -45,10 +46,10 @@
     }
   }
   
-  .home-aboutme > p,
-  button {
-    padding-right: 150px;
-    margin: 15px;
+  .home-aboutme > p{
+    margin-left: 15px;
+    max-width: 35rem;
+    padding-bottom: 1rem;
   }
   
   .home-img > img {
@@ -122,7 +123,7 @@
     background-color: rgb(255 255 255 / 0%);
   }
 
-  @media (max-width: 990px){
+  /* @media (max-width: 990px){
     .section-home{
       display: flex;
       flex-direction: column-reverse;
@@ -158,8 +159,15 @@
     }
   }
   }
+   */
 
-  @media (max-width: 390px){
+  /* @media screen and (max-width: 1080px) {
+    .section-home{
+      max-width: 50rem;
+    }
+  }
+
+  @media screen and (max-width: 480px){
     .section-home {
       padding-top: 50px;
       width: 300px;
@@ -186,6 +194,76 @@
 
         button,a{
           width: 260px;
+        }
+      }
+    }
+  } */
+
+  @media screen and (max-width: 1080px) {
+    .section-home{
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      padding-top: 2rem;
+      max-width: 38rem;
+
+      .home-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0rem;
+        img{
+          height: 20rem;
+          width: 20rem;
+        }
+      }
+
+      .home-aboutme{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+          text-align: start;
+          font-size: 3.3rem;
+        }
+      }
+
+      .container-buttoms-home{
+
+        a{
+          width: 10rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 720px){
+    .section-home{
+      max-width: 38rem;
+
+      .home-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0rem;
+        img{
+          height: 20rem;
+          width: 20rem;
+        }
+      }
+
+      .home-aboutme{
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+          text-align: start;
+          font-size: 3.3rem;
         }
       }
     }

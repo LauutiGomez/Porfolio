@@ -25,8 +25,8 @@ export const About = () => {
   }, [""]);
 
   return (
-    <section ref={sectionAbout}>
-      <h2 className="title-skills" id="about">
+    <section className="section-about-me" ref={sectionAbout}>
+      <h2 className="title-about-me" id="about">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -42,8 +42,8 @@ export const About = () => {
         </svg>
         Sobre mi
       </h2>
-      <article className="article-aboutme">
-        <div className="container-parrafos-aboutme">
+      <article className="article-about-me">
+        <div className="container-parrafos-about-me">
           <p>
             ¡Hola 👋🏻! Mi nombre es Lautaro, tengo 28 años y soy de la vibrante
             ciudad de Buenos Aires, Argentina.

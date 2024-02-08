@@ -33,8 +33,8 @@
     "title": "ToDo List",
     "img": "./src/assets/img/ToDo-List.webp",
     "description": "Aplicacion para organizar una lista de tareas a realizar",
-    "deploy": "",
-    "repo": "",
+    "deploy": "https://lauutigomez.github.io/ToDo-List/",
+    "repo": "https://github.com/LauutiGomez/ToDo-List",
     "tags": 
     [{
       "id":"5",

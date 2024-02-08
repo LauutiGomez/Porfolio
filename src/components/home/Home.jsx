@@ -34,7 +34,7 @@ export const Home = () => {
           mejorando la experiencia de usuario.
         </p>
         <nav className="container-buttoms-home">
-          <button className="button-cv">
+          <a className="button-cv">
             <span className="button-content-cv">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +54,7 @@ export const Home = () => {
               </svg>
               Descargar CV
             </span>
-          </button>
+          </a>
           <a
             href="https://www.linkedin.com/in/lautarogomez/"
             className="button-Linkedin"

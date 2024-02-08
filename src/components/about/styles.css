@@ -1,9 +1,9 @@
-.article-aboutme{
+.article-about-me{
       display: flex;
       align-items: center;
       padding-bottom: 50px;
 
-    .container-parrafos-aboutme{
+    .container-parrafos-about-me{
       margin-top: 50px;
     }
 
@@ -25,17 +25,25 @@
     }
   }
 
-  @media (max-width: 990px){
-    .article-aboutme {
-      padding-right: 20px;
-
+  @media screen and (max-width: 1080px){
+    .section-about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .article-about-me {
+      flex-direction: column-reverse;
       img{
         margin-top: 50px;
       }
+      .container-parrafos-about-me{
+      width: 30rem;
+      }
     }
   }
+  }
 
-  @media (max-width: 390px){
+  /* @media screen and (max-width: 480px){
     .article-aboutme{
       display: flex;
       flex-direction: column-reverse;
@@ -53,4 +61,4 @@
       }
 
     }
-  }
+  } */
