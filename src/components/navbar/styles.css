@@ -15,34 +15,24 @@ header {
 .navBar {
   border: 1px solid #ffffff;
   border-radius: 9999px;
-  padding: 0.25rem 0.75rem;
+  padding: 15px 80px;
+  gap: 10px;
   display: flex;
   align-items: center;
   background-color: #0505050c;
   backdrop-filter: blur(16px);
 }
 
-.navBar > ul {
-  display: flex;
-  padding: 5px 40px;
-  list-style: none;
-  flex-direction: row;
-}
-
-.navBar > ul > li {
-  padding: 5px 10px;
-}
-
-.navBar > ul > li > a {
+.navBar > a {
   text-decoration: none;
   display: flex;
-  padding: 5px 10px;
+  padding: 5px 15px;
   position: relative;
   font-size: 15px;
   transition: 0.3s ease;
 }
 
-.navBar > ul > li > a:hover {
+.navBar > a:hover {
   transform: scale(1.1);
   background-color: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.1);
@@ -86,11 +76,12 @@ text-yellow-500 {
 
     .navBar{
       width: inherit;
-    ul{
-      width: inherit;
       justify-content: center;
       align-items: center;
     }
-    }
   }
+}
+
+@media screen and (max-width: 480px){
+
 }

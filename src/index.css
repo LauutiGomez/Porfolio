@@ -52,29 +52,10 @@ html {
   height: 2rem;
 }
 
-/* @media screen and (max-width: 1080px){
-  .main {
-    max-width: 64rem;
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 480px){
-  .main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px ;
-    
-  }
-} */
 
 .active{
-  a{
     transform: scale(1.1);
     border: 1px solid rgba(255, 255, 255, 0.685) ;
     border-color: rgba(255, 255, 255, 0.685);
     border-radius: 9999px;
-  }
 }

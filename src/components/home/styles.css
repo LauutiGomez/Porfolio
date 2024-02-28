@@ -255,12 +255,10 @@
       }
 
       .home-aboutme{
-        width: 20rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         h3{
           text-align: start;
           font-size: 3.3rem;
@@ -268,3 +266,67 @@
       }
     }
   }
+
+  @media screen and (max-width: 580px){
+    .section-home{
+      max-width: 32rem;
+      .home-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0rem;
+        img{
+          height: 18rem;
+          width: 18rem;
+        }
+      }
+      .home-aboutme{
+        width: 32rem;
+        h1{
+          text-align: center;
+          font-size: 4rem;
+        }
+        h3{
+          text-align: center;
+          font-size: 2.5rem;
+        }
+        p{
+          text-align: center;
+        }
+      }
+
+      .container-buttoms-home{
+        display: flex;
+        flex-direction: column;
+      }
+  }
+}
+
+@media screen and (max-width: 390px){
+
+  .section-home{
+    max-width: 23rem;
+    .home-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0rem;
+      img{
+        height: 18rem;
+        width: 18rem;
+      }
+    }
+    .home-aboutme{
+      max-width: 23rem;
+      h1{
+        font-size: 3rem;
+      }
+      h3{
+        font-size: 2rem;
+      }
+      p{
+        width: 20rem
+      }
+    }
+  }
+}

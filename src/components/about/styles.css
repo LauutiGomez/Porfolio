@@ -43,22 +43,16 @@
   }
   }
 
-  /* @media screen and (max-width: 480px){
-    .article-aboutme{
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-
-      .container-parrafos-aboutme{
-        display: flex;
-        flex-direction: column;
-      }
-      img{
-        width: 250px;
-        height: 250px;
-      }
-
+  @media screen and (max-width: 390px){
+    .section-about-me{
+      margin-left: 15px;
+      max-width: 23rem;
+    .article-about-me{
+      max-width: 20rem;
+      .container-parrafos-about-me{
+        text-align: center;
+        width: 23rem;
+        }
     }
-  } */
+  }
+    }

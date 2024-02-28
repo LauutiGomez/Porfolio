@@ -2,20 +2,10 @@ export const Navbar = () => {
   return (
     <header>
       <nav className="navBar">
-        <ul>
-          <li id="navBar-Home">
-            <a href="#home">Inicio</a>
-          </li>
-          <li id="navBar-Proyectos">
-            <a href="#projects">Proyectos</a>
-          </li>
-          <li id="navBar-Habilidades">
-            <a href="#skills">Habilidades</a>
-          </li>
-          <li id="navBar-SobreMi">
-            <a href="#about">Sobre Mi</a>
-          </li>
-        </ul>
+            <a href="#home" id="navBar-Home">Inicio</a>
+            <a href="#projects" id="navBar-Proyectos">Proyectos</a>
+            <a href="#skills" id="navBar-Habilidades">Habilidades</a>
+            <a href="#about" id="navBar-SobreMi">Sobre Mi</a>
       </nav>
     </header>
   );
