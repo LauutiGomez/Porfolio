@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from "react";
-import { skills } from "../../data/tecnologias.json";
+import { skills } from "../../data/technologies.json";
 import { useIntersectionObserver } from "../../hook/useIntersectionObserver";
 export const Skills = () => {
   const sectionSkills = useRef(null);

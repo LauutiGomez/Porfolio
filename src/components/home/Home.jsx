@@ -11,7 +11,6 @@ export const Home = () => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         homeNavbar.classList.add("active");
-        console.log('entra al if')
       } else {
         homeNavbar.classList.remove("active");
       }
@@ -105,7 +104,7 @@ export const Home = () => {
       </div>
       <div className="home-img">
         <img
-          src="./src/assets/img/lautaro-gomez.png"
+          src="/lautaro-gomez.png"
           alt="imagen de Lautaro Gomez"
         />
       </div>

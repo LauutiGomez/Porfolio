@@ -2,7 +2,7 @@
   {
     "id": "0",
     "title": "Gamers Components",
-    "img": "./src/assets/img/gamers-components.webp",
+    "img": "/gamers-components.webp",
     "description":
       "Proyecto simulando una tienda E-commerce de componentes de computadora",
     "deploy": "https://lauutigomez.github.io/GamersComponents-proyecto/",
@@ -11,19 +11,19 @@
       {
         "id":"1",
         "label":"HTML",
-        "imageUrl":"./src/assets/img/html5.svg",
+        "imageUrl":"/html5.svg",
         "classTechnology":"html"
       },
       {
         "id":"2",
         "label":"CSS",
-        "imageUrl":"./src/assets/img/css.svg",
+        "imageUrl":"/css.svg",
         "classTechnology":"css"
       },
       {
         "id":"3",
         "label":"JavaScript",
-        "imageUrl":"./src/assets/img/javascript.svg",
+        "imageUrl":"/javascript.svg",
         "classTechnology":"JavaScript"
       }
     ]
@@ -31,7 +31,7 @@
   {
     "id": "4",
     "title": "ToDo List",
-    "img": "./src/assets/img/ToDo-List.webp",
+    "img": "/ToDo-List.webp",
     "description": "Aplicacion para organizar una lista de tareas a realizar",
     "deploy": "https://lauutigomez.github.io/ToDo-List/",
     "repo": "https://github.com/LauutiGomez/ToDo-List",
@@ -39,13 +39,13 @@
     [{
       "id":"5",
       "label":"React",
-      "imageUrl":"./src/assets/img/react.svg",
+      "imageUrl":"/react.svg",
       "classTechnology":"React"
     },
     {
       "id":"6",
       "label":"Tailwind CSS",
-      "imageUrl":"./src/assets/img/tailwindcss.svg",
+      "imageUrl":"/tailwindcss.svg",
       "classTechnology":"Tailwind"
     }]
   }

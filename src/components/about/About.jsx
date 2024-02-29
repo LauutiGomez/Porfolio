@@ -54,7 +54,7 @@ export const About = () => {
             🧉 y una buena charla.
           </p>
         </div>
-        <img src="./src/assets/img/sobre-mi.gif" alt="imagen gif de un programador" />
+        <img src="/sobre-mi.gif" alt="imagen gif de un programador" />
       </article>
     </section>
   );
