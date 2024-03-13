@@ -25,8 +25,8 @@ export const About = () => {
   }, [""]);
 
   return (
-    <section className="section-about-me" ref={sectionAbout}>
-      <h2 className="title-about-me" id="about">
+    <section className="section-about-me"  id="about" ref={sectionAbout}>
+      <h2 className="title-about-me">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

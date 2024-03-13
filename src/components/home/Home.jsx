@@ -28,13 +28,13 @@ export const Home = () => {
     <section className="section-home" id="home" ref={sectionHome}>
       <div className="home-aboutme">
         <h1>Lautaro Gomez</h1>
-        <h3>Front-End Developer</h3>
+        <h2>Front-End Developer</h2>
         <p>
           Desarrollando sitios web avanzados de alto rendimiento y
           mejorando la experiencia de usuario.
         </p>
         <nav className="container-buttoms-home">
-          <a className="button-cv">
+          <a className="button-cv" href="/assets/Lautaro_Gomez-Front-End-Developer.pdf" target="_blank" alt="CV Lautaro Gomez">
             <span className="button-content-cv">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@ export const Home = () => {
       </div>
       <div className="home-img">
         <img
-          src="/lautaro-gomez.png"
+          src="/lautaro-gomez.webp"
           alt="imagen de Lautaro Gomez"
         />
       </div>

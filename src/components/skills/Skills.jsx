@@ -4,6 +4,8 @@ import { useIntersectionObserver } from "../../hook/useIntersectionObserver";
 export const Skills = () => {
   const sectionSkills = useRef(null);
   const [skillNavbar, setskillNavbar] = useState(null);
+  const [config, setConfig] = useState(undefined);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   
   const handleIntersectionSkills = (entries) => {
@@ -16,12 +18,33 @@ export const Skills = () => {
     });
   };
 
-  useIntersectionObserver([sectionSkills], handleIntersectionSkills);
+  useIntersectionObserver([sectionSkills], handleIntersectionSkills, config);
   
   useEffect(() => {
     const element = document.getElementById("navBar-Habilidades");
     setskillNavbar(element);
   }, [""]);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isMobile)
+      setConfig({
+        root: null,
+        threshold: 0.2,
+      });
+    else setConfig(undefined);
+  }, [isMobile]);
 
   return (
     <section className="section-skills" id="skills" ref={sectionSkills}>

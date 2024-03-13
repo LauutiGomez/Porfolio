@@ -5,24 +5,47 @@ export const Projects = () => {
 
   const sectionProjects = useRef(null);
   const [projectsNavbar, setprojectsNavbar] = useState(null);
+  const [config, setConfig] = useState(undefined);
+  const [isMobile, setIsMobile] = useState(window.innerWidth >= 390);
 
   
   const handleIntersectionProjects = (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        projectsNavbar.classList.add("active");
+        projectsNavbar.classList.add("active")
       } else {
-        projectsNavbar.classList.remove("active");
+        projectsNavbar.classList.remove("active")
       }
     });
   };
 
-  useIntersectionObserver([sectionProjects], handleIntersectionProjects);
+  useIntersectionObserver([sectionProjects], handleIntersectionProjects, config);
   
   useEffect(() => {
     const element = document.getElementById("navBar-Proyectos");
     setprojectsNavbar(element);
   }, [""]);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth >= 390);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isMobile)
+      setConfig({
+        root: null,
+        threshold: 0.5,
+      });
+    else setConfig(undefined);
+  }, [isMobile]);
 
 
   return (
@@ -44,11 +67,11 @@ export const Projects = () => {
         </svg>
         Proyectos
       </h2>
-      <ul className="container-proyects">
+      <div className="container-proyects">
         {dataProyects.map((proyect) => {
           const { img, title, description, deploy, repo, tags, id } = proyect;
           return (
-            <li className="container-proyect" key={id}>
+            <article className="container-proyect" key={id}>
               <h2>{title}</h2>
               <p>{description}</p>
               <ul className="container-project-tags">
@@ -62,7 +85,7 @@ export const Projects = () => {
                 })}
               </ul>
               <img src={img} alt="imagen del proyecto realizado" />
-              <div className="container-proyects-buttoms">
+              <footer className="container-proyects-buttoms">
                 <a href={deploy} className="button-web" target="_blank">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -97,11 +120,11 @@ export const Projects = () => {
                   </svg>
                   Ver código Fuente
                 </a>
-              </div>
-            </li>
+              </footer>
+            </article>
           );
         })}
-      </ul>
+      </div>
     </section>
   );
 };

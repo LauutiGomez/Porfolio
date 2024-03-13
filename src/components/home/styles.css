@@ -12,7 +12,7 @@
   }
   
   .home-aboutme > h1,
-  h3 {
+  h2 {
     margin-left: 15px;
   }
   
@@ -20,7 +20,7 @@
     font-size: 5rem;
   }
   
-  .home-aboutme > h3 {
+  .home-aboutme > h2 {
     width: max-content;
     border-right: 3px solid #dce3f8;
     animation: teclear 1s steps(16), efecto 1s step-end infinite alternate;
@@ -123,81 +123,6 @@
     background-color: rgb(255 255 255 / 0%);
   }
 
-  /* @media (max-width: 990px){
-    .section-home{
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-      justify-content: center;
-      max-width: 600px;
-      padding-top: 50px;
-    }
-    .home-img{
-      display: flex;
-      justify-content: start;
-      img{
-        width: 200px;
-        height: 200px;
-      }
-    }
-
-    .home-aboutme{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    h3{
-      font-size: 56px;
-    }
-
-    p{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 5px 10px;
-    }
-  }
-  }
-   */
-
-  /* @media screen and (max-width: 1080px) {
-    .section-home{
-      max-width: 50rem;
-    }
-  }
-
-  @media screen and (max-width: 480px){
-    .section-home {
-      padding-top: 50px;
-      width: 300px;
-
-      .home-aboutme{
-        width: 300px;
-
-      h1{
-        width: auto;
-      }
-
-      h3{
-        width: auto;
-      }
-
-      }
-
-      .container-buttoms-home{
-        width: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        button,a{
-          width: 260px;
-        }
-      }
-    }
-  } */
 
   @media screen and (max-width: 1080px) {
     .section-home{
@@ -224,7 +149,7 @@
         justify-content: center;
         align-items: center;
 
-        h3{
+        h2{
           text-align: start;
           font-size: 3.3rem;
         }
@@ -259,7 +184,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        h3{
+        h2{
           text-align: start;
           font-size: 3.3rem;
         }
@@ -286,7 +211,7 @@
           text-align: center;
           font-size: 4rem;
         }
-        h3{
+        h2{
           text-align: center;
           font-size: 2.5rem;
         }
@@ -321,7 +246,7 @@
       h1{
         font-size: 3rem;
       }
-      h3{
+      h2{
         font-size: 2rem;
       }
       p{
