@@ -3,7 +3,7 @@ import { useRef, useState, useEffect } from "react";
 export const useIntersectionObserver = (
   targetElement,
   callback,
-  config = {root: null, threshold: 0.8}
+  config = {root: null, threshold: 0.7}
 ) => {
   const observer = useRef(null);
 

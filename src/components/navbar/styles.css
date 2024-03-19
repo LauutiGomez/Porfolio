@@ -82,6 +82,45 @@ text-yellow-500 {
   }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 720px) {
+      header{
+        max-width: 33rem;
+      .navBar{
+        padding: 10px 25px;
+      }
+      }}
 
+@media screen and (max-width: 540px){
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  .navBar{
+    max-width: 30rem;
+    padding: 10px 20px;
+  }
+  }
 }
+
+@media screen and (max-width: 480px){
+  header{
+    max-width: 28rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .navBar{
+      padding: 10px 15px;
+
+    a{
+      font-size: .8rem;
+    }
+      }
+  }
+}
+
+@media screen and (max-width: 390px){
+  header{
+    max-width: 26rem;
+  }}

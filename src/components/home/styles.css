@@ -1,257 +1,311 @@
 .section-home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: auto;
-    padding-bottom: 150px;
-  }
-  
-  .home-aboutme {
-    width: 45rem;
-  }
-  
-  .home-aboutme > h1,
-  h2 {
-    margin-left: 15px;
-  }
-  
-  .home-aboutme > h1 {
-    font-size: 5rem;
-  }
-  
-  .home-aboutme > h2 {
-    width: max-content;
-    border-right: 3px solid #dce3f8;
-    animation: teclear 1s steps(16), efecto 1s step-end infinite alternate;
-    background: linear-gradient(90deg, #ad6edd, #00d4ff);
-    background-clip: text;
-    color: transparent;
-    font-size: 50px;
-    padding-bottom: 1rem;
-  }
-  
-  @keyframes teclear {
-    from {
-      clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-    }
-    to {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-  }
-  
-  @keyframes efecto {
-    50% {
-      border-color: transparent;
-    }
-  }
-  
-  .home-aboutme > p{
-    margin-left: 15px;
-    max-width: 35rem;
-    padding-bottom: 1rem;
-  }
-  
-  .home-img > img {
-    background-size: cover;
-    background-position: center center;
-    width: 350px;
-    height: 350px;
-    border-radius: 100%;
-    animation: animate 5s ease-in-out infinite;
-    transition: all 1s ease-in-out;
-    border: 1px solid #ffffffde;
-    box-shadow: 0 0 60px #ffffff;
-  }
-  @keyframes animate {
-    0% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
-    50% {
-      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-    }
-    100% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
-  }
-  
-  .container-buttoms-home {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-  }
-  
-  .button-content-cv {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    background-color: transparent;
-  }
-  
-  .button-Linkedin,
-  .button-GitHub, .button-cv {
-    display: flex;
-    text-decoration: none;
-    height: 40px;
-    gap: 0.5rem;
-    padding: 0 2rem;
-    margin: 15px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    font-size: 0.75rem;
-    transition: all 0.3s ease;
-    border: 1px solid #ffffff1a;
-    border-radius: 10px;
-    font-size: 15px;
-  }
-  
-  .button-Linkedin:hover, .button-GitHub:hover, .button-cv:hover {
-    transform: scale(1.1);
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  
-  .icon-GitHub,
-  .icon-Linkedin,
-  .icon-cv {
-    stroke-width: 2;
-    stroke-linecap: round;
-    width: 2rem;
-    height: 2rem;
-    background-color: rgb(255 255 255 / 0%);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: auto;
+  padding-bottom: 150px;
+}
 
+.home-aboutme {
+  width: 45rem;
+}
 
-  @media screen and (max-width: 1080px) {
-    .section-home{
-      flex-direction: column-reverse;
-      align-items: center;
-      justify-content: center;
-      padding-top: 2rem;
-      max-width: 38rem;
+.home-aboutme > h1,
+h2 {
+  margin-left: 15px;
+}
 
-      .home-img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 0rem;
-        img{
-          height: 20rem;
-          width: 20rem;
-        }
-      }
+.home-aboutme > h1 {
+  font-size: 5rem;
+}
 
-      .home-aboutme{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+.home-aboutme > h2 {
+  width: max-content;
+  border-right: 3px solid #dce3f8;
+  animation: teclear 1s steps(16), efecto 1s step-end infinite alternate;
+  background: linear-gradient(90deg, #ad6edd, #00d4ff);
+  background-clip: text;
+  color: transparent;
+  font-size: 50px;
+  padding-bottom: 1rem;
+}
 
-        h2{
-          text-align: start;
-          font-size: 3.3rem;
-        }
-      }
-
-      .container-buttoms-home{
-
-        a{
-          width: 10rem;
-        }
-      }
-    }
+@keyframes teclear {
+  from {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
   }
-
-  @media screen and (max-width: 720px){
-    .section-home{
-      max-width: 38rem;
-
-      .home-img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 0rem;
-        img{
-          height: 20rem;
-          width: 20rem;
-        }
-      }
-
-      .home-aboutme{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h2{
-          text-align: start;
-          font-size: 3.3rem;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 580px){
-    .section-home{
-      max-width: 32rem;
-      .home-img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem 0rem;
-        img{
-          height: 18rem;
-          width: 18rem;
-        }
-      }
-      .home-aboutme{
-        width: 32rem;
-        h1{
-          text-align: center;
-          font-size: 4rem;
-        }
-        h2{
-          text-align: center;
-          font-size: 2.5rem;
-        }
-        p{
-          text-align: center;
-        }
-      }
-
-      .container-buttoms-home{
-        display: flex;
-        flex-direction: column;
-      }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
 
-@media screen and (max-width: 390px){
+@keyframes efecto {
+  50% {
+    border-color: transparent;
+  }
+}
 
-  .section-home{
-    max-width: 23rem;
-    .home-img{
+.home-aboutme > p {
+  margin-left: 15px;
+  max-width: 35rem;
+  padding-bottom: 1rem;
+}
+
+.home-img > img {
+  background-size: cover;
+  background-position: center center;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+  border: 1px solid #ffffffde;
+  box-shadow: 0 0 60px #ffffff;
+}
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+.container-buttoms-home {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.button-content-cv {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.button-Linkedin,
+.button-GitHub,
+.button-cv {
+  display: flex;
+  text-decoration: none;
+  height: 40px;
+  gap: 0.5rem;
+  padding: 0 2rem;
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 0.75rem;
+  transition: all 0.3s ease;
+  border: 1px solid #ffffff1a;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.button-Linkedin:hover,
+.button-GitHub:hover,
+.button-cv:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-GitHub,
+.icon-Linkedin,
+.icon-cv {
+  stroke-width: 2;
+  stroke-linecap: round;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(255 255 255 / 0%);
+}
+
+@media screen and (max-width: 1080px) {
+  .section-home {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    max-width: 38rem;
+
+    .home-img {
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 2rem 0rem;
-      img{
-        height: 18rem;
-        width: 18rem;
+      img {
+        height: 20rem;
+        width: 20rem;
       }
     }
-    .home-aboutme{
-      max-width: 23rem;
-      h1{
-        font-size: 3rem;
+
+    .home-aboutme {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        text-align: start;
+        font-size: 3.3rem;
       }
-      h2{
-        font-size: 2rem;
-      }
-      p{
-        width: 20rem
+    }
+
+    .container-buttoms-home {
+      a {
+        width: 10rem;
       }
     }
   }
 }
+
+@media screen and (max-width: 720px) {
+  .section-home{
+    .home-aboutme {
+      max-width: 34rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1{
+        width: auto;
+        font-size: 4.5rem;
+      }
+
+      h2{
+        font-size: 3rem;
+      }
+      
+      p{
+        max-width: 31rem;
+        text-align: center;
+      }
+
+      .container-buttoms-home{
+        a{
+          width: 8rem;
+        }
+      }
+  }
+}
+}
+
+@media screen and (max-width: 580px) {
+  .section-home {
+    max-width: 32rem;
+    .home-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0rem;
+      img {
+        height: 18rem;
+        width: 18rem;
+      }
+    }
+    .home-aboutme {
+      width: 32rem;
+      h1 {
+        text-align: center;
+        font-size: 4rem;
+      }
+      h2 {
+        text-align: center;
+        font-size: 2.5rem;
+      }
+      p {
+        text-align: center;
+      }
+    }
+
+    .container-buttoms-home {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-home{
+    max-width: 28rem;
+
+    .home-aboutme{
+      max-width: 28rem;
+
+      h1{
+        font-size: 3.5rem;
+      }
+      h2{
+        font-size: 2.3rem;
+      }
+
+      p{
+        width: 22rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .section-home {
+    max-width: 23rem;
+    .home-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0rem;
+      img {
+        height: 18rem;
+        width: 18rem;
+      }
+    }
+    .home-aboutme {
+      max-width: 23rem;
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        width: 20rem;
+      }
+    }
+  }
+}
+
+  /* .section-home {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+
+    .home-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0rem;
+      img {
+        height: 20rem;
+        width: 20rem;
+      }
+    }
+
+    .home-aboutme {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        text-align: start;
+        font-size: 3.3rem;
+      }
+    }
+  } */
