@@ -31,7 +31,7 @@
   {
     "id": "4",
     "title": "ToDo List",
-    "img": "projects-img/gamers-components.webp",
+    "img": "projects-img/ToDo-List.webp",
     "description": "Aplicacion para organizar una lista de tareas a realizar",
     "deploy": "https://lauutigomez.github.io/ToDo-List/",
     "repo": "https://github.com/LauutiGomez/ToDo-List",
