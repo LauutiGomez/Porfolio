@@ -7,7 +7,6 @@ export const Projects = () => {
   const [projectsNavbar, setprojectsNavbar] = useState(null);
   const [config, setConfig] = useState(undefined);
   const [isMobile, setIsMobile] = useState(window.innerWidth >= 390);
-
   
   const handleIntersectionProjects = (entries) => {
     entries.forEach((entry) => {
@@ -46,7 +45,6 @@ export const Projects = () => {
       });
     else setConfig(undefined);
   }, [isMobile]);
-
 
   return (
     <section className="section-cards-proyects" id="projects" ref={sectionProjects}>

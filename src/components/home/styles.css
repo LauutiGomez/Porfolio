@@ -18,18 +18,41 @@ h2 {
 
 .home-aboutme > h1 {
   font-size: 5rem;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .home-aboutme > h2 {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 250%;
+  -webkit-text-fill-color: transparent;
   width: max-content;
   border-right: 3px solid #dce3f8;
-  animation: teclear 1s steps(16), efecto 1s step-end infinite alternate;
-  background: linear-gradient(90deg, #ad6edd, #00d4ff);
+  animation: teclear 1s steps(16), efecto 1s step-end infinite alternate, gradient 5s ease infinite;
   background-clip: text;
   color: transparent;
   font-size: 50px;
   padding-bottom: 1rem;
 }
+
+.animate-gradient {
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0 50%
+  }
+
+  50% {
+      background-position: 100% 50%
+  }
+
+  to {
+      background-position: 0 50%;
+    }
+  }
+  
+
 
 @keyframes teclear {
   from {
@@ -53,15 +76,14 @@ h2 {
 }
 
 .home-img > img {
+  background-color: #121822;
   background-size: cover;
   background-position: center center;
   width: 350px;
   height: 350px;
   border-radius: 100%;
-  animation: animate 5s ease-in-out infinite;
-  transition: all 1s ease-in-out;
   border: 1px solid #ffffffde;
-  box-shadow: 0 0 60px #ffffff;
+  box-shadow: 0 0 30px #ffffff;
 }
 @keyframes animate {
   0% {
@@ -98,22 +120,22 @@ h2 {
   height: 40px;
   gap: 0.5rem;
   padding: 0 2rem;
+  font-size: 1rem;
+  font-weight: 600;
   margin: 15px;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  font-size: 0.75rem;
+  background-color: #604A84;
   transition: all 0.3s ease;
   border: 1px solid #ffffff1a;
   border-radius: 10px;
-  font-size: 15px;
 }
 
 .button-Linkedin:hover,
 .button-GitHub:hover,
 .button-cv:hover {
   transform: scale(1.1);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #604a849c
 }
 
 .icon-GitHub,
@@ -280,32 +302,3 @@ h2 {
     }
   }
 }
-
-  /* .section-home {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    padding-top: 2rem;
-
-    .home-img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 2rem 0rem;
-      img {
-        height: 20rem;
-        width: 20rem;
-      }
-    }
-
-    .home-aboutme {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      h2 {
-        text-align: start;
-        font-size: 3.3rem;
-      }
-    }
-  } */

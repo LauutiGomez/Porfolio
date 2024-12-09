@@ -2,10 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import { useIntersectionObserver } from "../../hook/useIntersectionObserver";
 
 export const About = () => {
-
   const sectionAbout= useRef(null);
   const [aboutNavbar, setaboutNavbar] = useState(null);
-
   
   const handleIntersectionAbout = (entries) => {
     entries.forEach((entry) => {
@@ -40,7 +38,7 @@ export const About = () => {
           <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
           <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
         </svg>
-        Sobre mi
+        Sobre mí
       </h2>
       <article className="article-about-me">
         <div className="container-parrafos-about-me">

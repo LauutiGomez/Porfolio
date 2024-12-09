@@ -27,11 +27,11 @@
 
   @media screen and (max-width: 1080px){
     .section-about-me{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     .article-about-me {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       flex-direction: column-reverse;
       img{
         margin-top: 50px;
@@ -47,7 +47,6 @@
     .section-about-me{
       margin-left: 15px;
     .article-about-me{
-      max-width: 20rem;
       .container-parrafos-about-me{
         text-align: center;
         width: 23rem;

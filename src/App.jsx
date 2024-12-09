@@ -12,6 +12,11 @@ function App() {
       <Projects />
       <Skills />
       <About />
+      <section className="starsContainer">
+      <div className="smallStars"></div>
+      <div className="medStars"></div>
+      <div className="largeStars"></div>
+      </section>
     </main>
   );
 }

@@ -1,12 +1,12 @@
 import { useRef, useEffect, useState } from "react";
 import { skills } from "../../data/technologies.json";
 import { useIntersectionObserver } from "../../hook/useIntersectionObserver";
+
 export const Skills = () => {
   const sectionSkills = useRef(null);
   const [skillNavbar, setskillNavbar] = useState(null);
   const [config, setConfig] = useState(undefined);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
   
   const handleIntersectionSkills = (entries) => {
     entries.forEach((entry) => {
@@ -54,12 +54,12 @@ export const Skills = () => {
           const { name, skillsImageUrl } = skill;
           return (
             <li key={i} className={`icon-container-${name}`}>
-              <span>{name}</span>
               <img
                 src={skillsImageUrl}
                 alt="icono del stack que utilizo"
                 className="icon-skills"
               />
+              <span>{name}</span>
             </li>
           );
         })}

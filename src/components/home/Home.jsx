@@ -2,10 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import { useIntersectionObserver } from "../../hook/useIntersectionObserver";
 
 export const Home = () => {
-
   const sectionHome = useRef(null);
-  const [homeNavbar, sethomeNavbar] = useState(null);
-
+  const [homeNavbar, sethomeNavbar] = useState(null);  
   
   const handleIntersectionHome = (entries) => {
     entries.forEach((entry) => {
@@ -28,7 +26,7 @@ export const Home = () => {
     <section className="section-home" id="home" ref={sectionHome}>
       <div className="home-aboutme">
         <h1>Lautaro Gomez</h1>
-        <h2>Front-End Developer</h2>
+        <h2 className="animate-gradient">Front-End Developer</h2>
         <p>
           Desarrollando sitios web avanzados de alto rendimiento y
           mejorando la experiencia de usuario.

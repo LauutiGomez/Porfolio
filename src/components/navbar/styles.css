@@ -34,14 +34,11 @@ header {
 
 .navBar > a:hover {
   transform: scale(1.1);
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.1);
+  background-color: #604A84;
+  border-color: #604A84;
   border-radius: 9999px;
 }
 
-text-yellow-500 {
-  color: purple;
-}
 
 /* @media screen and (max-width: 1024px) {
   header {
