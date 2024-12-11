@@ -1,6 +1,6 @@
 Mi Porfolio Front-End
 
-![image](https://github.com/LauutiGomez/Porfolio/public/open-Graph.webp)
+![image](https://raw.githubusercontent.com/LauutiGomez/Porfolio/refs/heads/master/public/open-Graph.webp)
 
 
 Creado con:
