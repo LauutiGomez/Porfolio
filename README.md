@@ -1,6 +1,6 @@
 Mi Porfolio Front-End
 
-![image](https://github.com/LauutiGomez/Porfolio/assets/104801303/04a1bf89-f4e5-4ba3-ad6b-ab69d9291608)
+![image](https://raw.githubusercontent.com/LauutiGomez/Porfolio/refs/heads/master/public/open-Graph.webp)
 
 
 Creado con:
