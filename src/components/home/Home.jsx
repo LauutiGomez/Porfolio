@@ -32,7 +32,7 @@ export const Home = () => {
           mejorando la experiencia de usuario.
         </p>
         <nav className="container-buttoms-home">
-          <a className="button-cv" href="/assets/Lautaro_Gomez-Front-End-Developer.pdf" target="_blank" alt="CV Lautaro Gomez">
+          <a className="button-cv" href="/assets/Curriculum-Lautaro_Gomez-Front-End-Developer.pdf" target="_blank" alt="CV Lautaro Gomez">
             <span className="button-content-cv">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
