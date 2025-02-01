@@ -22,6 +22,10 @@
   filter: drop-shadow(#ba38fe 5px 5px 10px);
 }
 
+.icon-container-Gastby > img:hover {
+  filter: drop-shadow(#663399 5px 5px 10px);
+}
+
 .icon-container-Tailwind > img:hover {
   filter: drop-shadow(#38bdf8 5px 5px 10px);
 }
@@ -34,12 +38,16 @@
   filter: drop-shadow(#de4c36 5px 5px 10px);
 }
 
+.icon-container-GitHub > img:hover {
+  filter: drop-shadow(#000000 5px 5px 10px);
+}
+
 .container-skills {
   padding: 0.8em 1em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 5rem;
   list-style: none;
 
   li {
@@ -67,12 +75,11 @@
   }
 }
 
-.container-skills > li:hover{
+.container-skills > li:hover {
   transition: 0.3s;
   opacity: 1;
   transform: scale(1.2);
 }
-
 
 .container-skills > li:hover span {
   opacity: 1;
@@ -82,10 +89,22 @@
 @media screen and (max-width: 1080px) {
   .section-skills {
     .container-skills {
-      gap: 4.5rem;
       display: flex;
       justify-content: center;
       align-items: center;
+      gap: 4.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .section-skills {
+    padding-bottom: 80px;
+    .container-skills {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
     }
   }
 }

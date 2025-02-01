@@ -15,12 +15,18 @@
   "name": "Vite", 
   "skillsImageUrl": "technologies/vitejs.svg"},
   {"id": "5", 
+  "name": "Gastby", 
+  "skillsImageUrl": "technologies/gatsby.webp"},
+  {"id": "6", 
   "name": "Tailwind CSS",
   "skillsImageUrl": "technologies/tailwindcss.svg"},
-  {"id": "6", 
+  {"id": "7", 
   "name": "Bootstrap", 
   "skillsImageUrl": "technologies/bootstrap.svg"},
-  {"id": "7", 
+  {"id": "8", 
   "name": "Git", 
-  "skillsImageUrl": "technologies/git.svg"}
+  "skillsImageUrl": "technologies/git.svg"},
+  {"id": "8", 
+  "name": "GitHub", 
+  "skillsImageUrl": "technologies/github.webp"}
 ]}

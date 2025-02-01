@@ -1,0 +1,12 @@
+{
+  "experiences":[
+    {
+      "date": "Noviembre 2024 - Actualidad",
+      "title": "Logistica Los Principes",
+      "description": "Desarrollo de una landing page profesional con Gatsby para potenciar la presencia digital de la empresa, implementando un diseño responsivo centrado en la experiencia del usuario. Aplicación de estrategias de SEO básico para optimizar la visibilidad en motores de búsqueda. Colaboración activa en el desarrollo, revisión y optimización del código junto a otro desarrollador.",
+      "technologies": ["Gatsby", "React", "Tailwind CSS", "SEO"],
+      "tools": ["Git", "GitHub", "Trello", "Web Accessibility"],
+      "link": "https://logistica-los-principes.netlify.app/"
+    }
+  ]
+}
